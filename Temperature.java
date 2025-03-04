@@ -18,7 +18,8 @@ public class Temperature {
                 double celsius = (fahrenheit - 32) * 5 / 9;
                 System.out.println(fahrenheit + "°F is " + celsius + "°C");
             }
-        }/* 
+        }
+        /* 
         int n;
         float c,f;
         
