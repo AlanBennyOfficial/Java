@@ -1,4 +1,4 @@
-// Write a Java program to define a class Circle with an attribute radius, and compute the area and circumference of the circle
+// Write a Java program to define a class Circle with an attribute radius, and compute the area and circumference of the circle.
 import java.util.Scanner;
 
 class Circle{
