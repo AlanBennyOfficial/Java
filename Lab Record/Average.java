@@ -12,11 +12,9 @@ public class Average {
         float sum = 0;
         for (int i = 0; i < n; i++) {
             num[i] = sc.nextFloat();
-        }
-
-        for (int i = 0; i < n; i++) {
             sum += num[i];
         }
+
         System.out.println("Average of 5 numbers is: " + sum / n);
     }
     
