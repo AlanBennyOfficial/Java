@@ -24,7 +24,7 @@ public class Roots_Quadratic_Equation{
 			      System.out.format("root1 = %.2f and root2 = %.2f", root1, root2);
 			    }
 			else if (discriminant == 0) {
-			      root1 = root2 = -b / (2 * a);
+			      root1 = root2 = -b / (2 * a); // TODO: check if this is correct
 			      	
 			      System.out.format("root1 = root2 = %.2f;", root1);
 			    }
