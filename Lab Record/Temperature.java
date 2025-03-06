@@ -1,4 +1,4 @@
-package allen;
+
 import java.util.Scanner;
 public class Temperature {
     // convert from celcius to fahrenheit and vice versa
