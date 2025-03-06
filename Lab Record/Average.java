@@ -1,4 +1,4 @@
-
+// Write a Java program to find the average of N numbers entered by the user.
 import java.util.Scanner;
 
 public class Average {
