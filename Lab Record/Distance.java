@@ -1,4 +1,5 @@
 // Write a Java program to calculate the distance between two points (x₁, y₁) and (x₂, y₂) using the distance formula. 
+
 import java.util.Scanner;
 public class Distance{
 	public static void main(String[] args) {
