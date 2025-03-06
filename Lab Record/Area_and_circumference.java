@@ -14,7 +14,7 @@ class Circle{
 	}
 }
 
-class Area_and_circumference{
+public class Area_and_circumference{
 	public static void main(String[] args) {
 		System.out.println("Enter the radius: ");
 		try (Scanner SC = new Scanner(System.in)) {
