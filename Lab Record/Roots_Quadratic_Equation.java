@@ -25,7 +25,7 @@ public class Roots_Quadratic_Equation{
 			    }
 			else if (discriminant == 0) {
 			      root1 = root2 = -b / (2 * a); // TODO: check if this is correct
-			      	
+	
 			      System.out.format("root1 = root2 = %.2f;", root1);
 			    }
 			else {
@@ -42,3 +42,4 @@ public class Roots_Quadratic_Equation{
 		// x = [-b ± sqrt(b^2 - 4ac)] / 2a
 	}
 }
+
