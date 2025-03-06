@@ -1,3 +1,4 @@
+package Lab Record;
 import java.util.Scanner;
 
 public class Average {
