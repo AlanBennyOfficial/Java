@@ -1,4 +1,5 @@
 // Write a Java program to convert temperature from Celsius to Fahrenheit and vice versa.
+
 import java.util.Scanner;
 public class Temperature {
     // convert from celcius to fahrenheit and vice versa
