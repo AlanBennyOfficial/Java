@@ -1,4 +1,3 @@
-package allen;
 import java.util.Scanner;
 public class Roots_Quadratic_Equation{
 	public static void main(String[] args){
