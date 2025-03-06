@@ -13,9 +13,8 @@ public class Average {
                 num[i] = sc.nextFloat();
                 sum += num[i];
             }
-
-            System.out.println("Average of 5 numbers is: " + sum / n);
+            
+            System.out.println("Average of " + n + " numbers is: " + sum / n);
         }
     }
-    
 }
