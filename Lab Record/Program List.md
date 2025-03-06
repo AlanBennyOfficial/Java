@@ -5,7 +5,7 @@
 3. Write a Java program to find the roots of a quadratic equation ax² + bx + c = 0. ✓
 4. Write a Java program to calculate the perimeter and area of a given shape (circle, rectangle, or square).
 5. Write a Java program to compute compound interest using the formula A = P(1 + r/n)^(nt).
-6. Write a Java program to find the average of N numbers entered by the user.
+6. Write a Java program to find the average of N numbers entered by the user. ✓
 7. Write a Java program to convert temperature from Celsius to Fahrenheit and vice versa. ✓
 8. Write a Java program to perform arithmetic operations on complex numbers.
 9. Write a Java program to define a class Person with attributes name and age, and display the details of a person.
