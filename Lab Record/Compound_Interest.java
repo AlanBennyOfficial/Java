@@ -13,9 +13,10 @@ public class Compound_Interest {
             double n = sc.nextDouble();
             System.out.print("Enter number of time periods elapsed: ");
             double t = sc.nextDouble();
-            
+
             double A = P * Math.pow(1 + r/n, n*t);
             System.out.println("Compound Interest = " + A);
         }
     }
 }
+
