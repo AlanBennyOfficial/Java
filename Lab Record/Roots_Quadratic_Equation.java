@@ -6,7 +6,7 @@ public class Roots_Quadratic_Equation{
 		try(Scanner sc = new Scanner(System.in)){
 			double root1;
 			double root2;
-			System.out.println("To find root using x = (-b ± √ (b² – 4ac) )/2a");
+			System.out.println("To find root using x = (-b ± √ (b² - 4ac) )/2a");
 			
 			System.out.print("Enter a: ");
 			float a = sc.nextFloat();
