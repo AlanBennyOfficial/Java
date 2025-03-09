@@ -1,6 +1,7 @@
 // Write a Java program to compute compound interest using the formula A = P(1 + r/n)^(nt).
 
 import java.util.Scanner;
+
 public class Compound_Interest {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
