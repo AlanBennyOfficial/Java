@@ -7,7 +7,7 @@ public class Average {
         try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Enter the number of elements: ");
             int n = sc.nextInt();
-            System.out.println("Enter " + n + " numbers:");
+            System.out.print("Enter " + n + " numbers:");
 
             float[] num = new float[n];
             float sum = 0;
