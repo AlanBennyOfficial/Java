@@ -12,7 +12,7 @@ public class Compound_Interest {
             System.out.print("Enter the number of years: ");
             int t = sc.nextInt();
 
-            double A = P * Math.pow(1 + (r/100) / n, n * t);
+            double A = P * Math.pow(1 + (r/100) / n, n * t); 
             System.out.println("Compound Amount = "+ A);
         }
     }
