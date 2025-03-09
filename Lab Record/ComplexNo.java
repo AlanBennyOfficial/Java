@@ -1,85 +1,45 @@
 // 8. Write a Java program to perform arithmetic operations on complex numbers.
 
-import java.util.Scanner;
+class Complex {
+    private double real;
+    private double imaginary;
 
-class Complex
-{
-	private int real;
-	private int img;
-	
-	public Complex()
-	{
-		real = 0;
-		img = 0;
-	}
-	public Complex(int x)
-	{
-		real = x;
-		img = x;
-	}
-	public Complex(int x ,int y)
-	{
-		real = x;
-		img = y;
-	}
-	public void display()
-	{
-		System.out.println("The Complex Number is:"+ real + "+i" + img);
-	}
-	public void add(Complex A,Complex B)
-	{
-		this.real = A.real + B.real;
-		this.img = A.img + B.img;	
-	}
-	public Complex sub(Complex A,Complex B)
-	{
-		Complex C = new Complex();
-		C.real = A.real - B.real;
-		C.img = A.img - B.img;
-		return C;
-	}
-	public void mul(Complex A,Complex B)
-	{
-		this.real = (A.real*B.real)-(A.img*B.img);
-		this.img = (A.real*B.real)+(A.img*B.img);
-		
-	}
-	
-}
-public class ComplexNo
-{
-	public static void main(String[]args)
-	{
-            try (Scanner sc = new Scanner(System.in)) {
-                Complex c1 = new Complex();
-                Complex c2 = new Complex(10);
-                Complex c3 = new Complex(10,20);
-                c1.display();
-                c2.display();
-                c3.display();
-                
-                System.out.print("Enter one value for real and imaginary part:");
-                int x1 = sc.nextInt();
-                Complex c_1 = new Complex(x1);
-                
-                System.out.print("Enter two values for real abd Imaginary Part:");
-                int x2 = sc.nextInt();
-                int y2 = sc.nextInt();
-                Complex c_2 = new Complex(x2,y2);
-                
-                Complex c_3 = new Complex();
-                c_3.add(c_1, c_2);
-                
-                Complex c_4 = new Complex();
-                c_4 = c_4.sub(c_1,c_2);
-                
-                Complex c_5 = new Complex();
-                c_5.mul(c_1, c_2);
-                
-                c_3.display();
-                c_4.display();
-                c_5.display();
-            }
-		}
-	
+    public Complex(double real, double imaginary) {
+        this.real = real;
+        this.imaginary = imaginary;
+    }
+
+    public Complex add(Complex other) {
+        return new Complex(this.real + other.real, this.imaginary + other.imaginary);
+    }
+
+    public Complex subtract(Complex other) {
+        return new Complex(this.real - other.real, this.imaginary - other.imaginary);
+    }
+
+    public Complex multiply(Complex other) {
+        return new Complex(this.real * other.real - this.imaginary * other.imaginary,
+                           this.real * other.imaginary + this.imaginary * other.real);
+    }
+
+    public Complex divide(Complex other) {
+        double denominator = other.real * other.real + other.imaginary * other.imaginary;
+        return new Complex((this.real * other.real + this.imaginary * other.imaginary) / denominator,
+                           (this.imaginary * other.real - this.real * other.imaginary) / denominator);
+    }
+
+
+    public String toString() {
+        return real + " + " + imaginary + "i";
+    }
+
+    public static void main(String[] args) {
+        Complex num1 = new Complex(3, 2);
+        Complex num2 = new Complex(1, 7);
+
+        System.out.println("Addition: " + num1.add(num2));
+        System.out.println("Subtraction: " + num1.subtract(num2));
+        System.out.println("Multiplication: " + num1.multiply(num2));
+        System.out.println("Division: " + num1.divide(num2));
+    }
 }
