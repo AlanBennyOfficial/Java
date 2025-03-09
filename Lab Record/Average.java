@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Average {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            System.out.println("Enter the number of elements: ");
+            System.out.print("Enter the number of elements: ");
             int n = sc.nextInt();
             System.out.println("Enter " + n + " numbers:");
 
