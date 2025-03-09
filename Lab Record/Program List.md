@@ -8,5 +8,5 @@
 6. Write a Java program to find the average of N numbers entered by the user. ✓
 7. Write a Java program to convert temperature from Celsius to Fahrenheit and vice versa. ✓
 8. Write a Java program to perform arithmetic operations on complex numbers. ✓
-9. Write a Java program to define a class Person with attributes name and age, and display the details of a person.
+9. Write a Java program to define a class Person with attributes name and age, and display the details of a person. ✓
 10. Write a Java program to define a class Circle with an attribute radius, and compute the area and circumference of the circle. ✓
