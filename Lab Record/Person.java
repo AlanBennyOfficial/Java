@@ -14,7 +14,13 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person p = new Person("John", 25);
-        p.display();
+        try(java.util.Scanner sc = new java.util.Scanner(System.in)){
+            System.out.print("Enter name: ");
+            String name = sc.nextLine();
+            System.out.print("Enter age: ");
+            int age = sc.nextInt();
+            Person p = new Person(name, age);
+            p.display();
+        }
     }
 }
