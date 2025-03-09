@@ -1,8 +1,9 @@
 // 4. Write a Java program to calculate the perimeter and area of a given shape (circle, rectangle, or square).
+import java.util.Scanner;
 
 public class Perimeter_Area {
     public static void main(String[] args) {
-        try (java.util.Scanner sc = new java.util.Scanner(System.in)) {
+        try (Scanner sc = new Scanner(System.in)) {
             System.out.println("1. Circle\n2. Rectangle\n3. Square");
             System.out.print("Enter your choice: ");
             int choice = sc.nextInt();
