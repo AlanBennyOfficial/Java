@@ -26,10 +26,10 @@ public class Roots_Quadratic_Equation{
 			      System.out.format("root1 = %.2f and root2 = %.2f", root1, root2);
 			    }
 			else if (discriminant == 0) {
-			      root1 = root2 = -b / (2 * a); // TODO: check if this is correct
+				  root1 = -b / (2 * a); // TODO: check if this is correct
 	
-			      System.out.format("root1 = root2 = %.2f;", root1);
-			    }
+				  System.out.format("root1 = root2 = %.2f;", root1);
+				}
 			else {
 			      double real = -b / (2 * a);
 			      double imaginary = Math.sqrt(-discriminant) / (2 * a);
