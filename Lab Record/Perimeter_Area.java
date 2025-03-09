@@ -10,17 +10,17 @@ public class Perimeter_Area {
             switch (choice) {
                 case 1 -> {
                     System.out.print("Enter radius: ");
-                    double radius = sc.nextDouble();
-                    System.out.println("Perimeter: " + 2 * Math.PI * radius);
-                    System.out.println("Area: " + Math.PI * radius * radius);
+                    double r = sc.nextDouble();
+                    System.out.println("Perimeter: " + 2 * Math.PI * r);
+                    System.out.println("Area: " + Math.PI * r * r);
                 }
                 case 2 -> {
                     System.out.print("Enter length: ");
-                    double length = sc.nextDouble();
+                    double l = sc.nextDouble();
                     System.out.print("Enter breadth: ");
-                    double breadth = sc.nextDouble();
-                    System.out.println("Perimeter: " + 2 * (length + breadth));
-                    System.out.println("Area: " + length * breadth);
+                    double b = sc.nextDouble();
+                    System.out.println("Perimeter: " + 2 * (l + b));
+                    System.out.println("Area: " + l * b);
                 }
                 case 3 -> {
                     System.out.print("Enter side: ");
