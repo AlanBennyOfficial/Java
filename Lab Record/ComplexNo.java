@@ -62,7 +62,7 @@ public class ComplexNo
                 int x1 = sc.nextInt();
                 Complex c_1 = new Complex(x1);
                 
-                System.out.print("Enter two value for real abd Imaginary Part:");
+                System.out.print("Enter two values for real abd Imaginary Part:");
                 int x2 = sc.nextInt();
                 int y2 = sc.nextInt();
                 Complex c_2 = new Complex(x2,y2);
