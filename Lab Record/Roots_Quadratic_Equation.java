@@ -38,9 +38,8 @@ public class Roots_Quadratic_Equation{
 			    }
 		}
 		// x = (-b ± √ (b² – 4ac) )/2a
-		// x = (-b ± √(b2-4ac)) / (2a)
 		// root1 = (-b + √(b2-4ac)) / (2a)
-		// root1 = (-b - √(b2-4ac)) / (2a)
+		// root2 = (-b - √(b2-4ac)) / (2a)
 		// x = [-b ± sqrt(b^2 - 4ac)] / 2a
 	}
 }
