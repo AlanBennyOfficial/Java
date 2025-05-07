@@ -9,12 +9,11 @@ class Person
     String name;
     int age;
    
-    public void readDeatils()
+    public void readDetails(Scanner sc)
     {
-        Scanner sc = new Scanner(System.in);
         System.out.print("Enter name and age: ");
         name = sc.nextLine();
-        age=sc.nextInt();
+        age = sc.nextInt();
         sc.nextLine(); // Consume the newline character
     }
    
@@ -26,9 +25,8 @@ class Student extends Person
     double m1,m2,m3,total,avg;
     String result;
    
-    public void getDetails()
+    public void getDetails(Scanner sc)
     {
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter Regno and marks in 3 subjects");
         regNo = sc.nextInt();
         sc.nextLine(); // Consume the newline character
@@ -72,26 +70,34 @@ class Student extends Person
 }
 
 public class PersonDemo {
-public static void main(String[] args)
-{
-    Student[] s=new Student[20];
-    int n;
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter total number of students: ");
-    n=sc.nextInt();
-    for(int i=0;i<n;i++) {
-    s[i] = new Student();
-    s[i].readDeatils();
-    s[i].getDetails();
-    s[i].calResult();
+    public static void main(String[] args)
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter total number of students: ");
+        int n = scanner.nextInt();
+        scanner.nextLine(); // Consume the newline character
+
+        if (n > 20 || n <= 0) {
+            System.out.println("Invalid number of students. Please enter a number between 1 and 20.");
+            return;
+        }
+
+        Student[] students = new Student[n];
+        for (int i = 0; i < n; i++) {
+            students[i] = new Student();
+            students[i].readDetails(scanner); // Pass Scanner instance
+            students[i].getDetails(scanner); // Pass Scanner instance
+            students[i].calResult();
+        }
+
+        System.out.println(" \t___________________________________________________________________________________");
+        System.out.println(" \t| Name \t| Age \t|Reg No\t| M1 \t| M2 \t| M3 \t| Total\t\t| Avg\t| Result |");
+        System.out.println(" \t___________________________________________________________________________________");
+
+        for (Student student : students) {
+            student.displayDetails();
+        }
+
+        System.out.println(" \t____________________________________________________________________________________");
     }
-    System.out.println(" \t___________________________________________________________________________________");        
-    System.out.println(" \t| Name \t| Age \t|Reg No\t| M1 \t| M2 \t| M3 \t| Total\t\t| Avg\t| Result |");
-    System.out.println(" \t___________________________________________________________________________________");        
-   
-    for(int i=0;i<n;i++)
-        s[i].displayDetails();
-    System.out.println(" \t____________________________________________________________________________________");        
-       
-}
 }
