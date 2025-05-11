@@ -1,9 +1,7 @@
 // JAVA Code to print 
 // the diamond shape
 
-class DiamondLoops
-{
-    
+class DiamondLoops{
     // Prints diamond pattern
     // with 2n rows
     static void printDiamond(int n)
@@ -12,8 +10,8 @@ class DiamondLoops
     
         // run loop (parent loop) 
         // till number of rows
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++){
+
             // loop for initially space, 
             // before star printing
             for (int j = 0; j < space; j++)
@@ -33,8 +31,8 @@ class DiamondLoops
     
         // run loop (parent loop) 
         // till number of rows
-        for (int i = n-1; i > 0; i--)
-        {
+        for (int i = n-1; i > 0; i--){
+            
             // loop for initially space, 
             // before star printing
             for (int j = -1; j < space; j++)
